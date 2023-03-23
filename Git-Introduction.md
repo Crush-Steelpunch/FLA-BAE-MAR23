@@ -21,9 +21,9 @@ Switch to main branch and do `git merge newpara`
 
 - Create an account in Github (or use an existing one)
 - Create a repository in Github. (make the name relevent to the course)
-- Create a PAT for your account 
+- Create a PAT for your account (classic)
   - <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>
-- Clone your repostiry to your LoD machine
+- Clone your repository to your LoD machine
   - `git clone <https url>`
 - Open the folder in VSCode
 - Create a new file and add some contents
