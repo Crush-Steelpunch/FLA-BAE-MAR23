@@ -4,7 +4,7 @@
 
 In LoD, Create a new folder called Documents/gitlearn1, open it in VScode, Initialise the folder as git repo.
 
-Open a terminal in VSCode **(View > Terminal)** and set up your user details with
+Open a terminal pane in VSCode **(View > Terminal)** and set up your user details with
 
 ```bash
 git config --global user.name "Your Name"
