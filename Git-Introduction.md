@@ -25,6 +25,7 @@ Switch to main branch and do `git merge newpara`
   - Add a README
 - Create a PAT for your account (classic)
   - <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>
+  - The only scope you need is `repo`
 - Clone your repository to your LoD machine
   - `git clone <https url>`
 - Open the folder in VSCode
