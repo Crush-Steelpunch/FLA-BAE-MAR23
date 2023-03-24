@@ -1,4 +1,4 @@
-I like pies chips and gravy
+I like pies, chips and gravy
 I can rollerskate a bit
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -13,6 +13,8 @@ Nunc porttitor urna vel lacus efficitur pellentesque. Sed a lacinia sem,
 a tempor odio. Vestibulum mattis molestie lacinia. Morbi sagittis nunc vitae 
 lobortis pretium. Ut id tortor sed urna venenatis aliquet ut a libero. 
 
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at congue erat. Phasellus sollicitudin ultrices mauris at tristique. Donec orci justo, posuere nec velit ac, gravida egestas ante. Curabitur ornare neque urna, vitae convallis ipsum maximus nec. Fusce sagittis sem id lectus feugiat interdum. Donec nibh arcu, dignissim non orci ac, rhoncus accumsan tellus. Fusce blandit, elit at varius commodo, felis nisi fringilla lectus, eu ullamcorper augue nisl eget felis. Nullam et pellentesque ex. Donec eu cursus odio. Vivamus lacinia nisi lacus, non tincidunt dolor commodo a. Maecenas ipsum lectus, gravida at leo non, mollis pulvinar elit. Nunc feugiat, urna nec viverra commodo, mauris mauris posuere ante, eu luctus quam ipsum eget nisi. Nunc fermentum elit id urna finibus lacinia. 
+This is an amendment
+I have added another line
+Change made on GitHub
+lets make a change
