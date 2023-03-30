@@ -46,3 +46,41 @@ while testvar1 != 10:
 
 
 print("end program")
+
+
+# range function
+
+# range(start)
+
+#  Return an object that produces a sequence of integers from start (inclusive)
+#|  to stop (exclusive) by step.
+
+# range(5)       0,1,2,3,4
+# range(5,10)    5,6,7,8,9
+# range(0,10,2)  0,2,4,6,8
+
+# for loop
+
+# for variable in sequence:
+#     code()
+
+for var  in range(5):
+    print("This line")
+ 
+
+for loopvar1 in range(10):
+    print("This is line " + str(loopvar1))
+
+
+for loopvar1 in range(0,20,2):
+    print("This is line " + str(loopvar1))
+    if loopvar1 == 12:
+        break 
+
+# nested loop
+
+for outervar in range(10):
+    print("This is section " + str(outervar))
+    for innervar in range(3):
+        print("+--- This is subsection " + str(innervar) + " of " + str(outervar) )
+
