@@ -59,7 +59,7 @@ print(totalvar)
 #  Decomposition - Breaking down a problem to small parts
 #  Pattern Recognition - looking for similarities, applying tools you know to them
 #  Abstraction  - focussing on the relevent part of the problem 
-#  Algorithms - developing a solution, using Sequencing, Selection, Interation
+#  Algorithms - developing a solution, using Sequencing, Selection, Iteration
 
 # Selection
 
