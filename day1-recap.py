@@ -88,3 +88,12 @@ elif inputvar1asanint < 1000:
     print(inputvar1 + " has three numbers" )
 else:
     print(inputvar1 + " has more than 3 numbers")
+
+    # Logical Operators, and, or, not
+
+if inputvar1asanint > 0 and inputvar1asanint < 100:
+    print(inputvar1 + " has up to two charactors")
+
+if not (inputvar1asanint > 0 and inputvar1asanint < 100):
+    print(inputvar1 + "does not has up to two charactors")
+
