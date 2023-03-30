@@ -97,3 +97,4 @@ if inputvar1asanint > 0 and inputvar1asanint < 100:
 if not (inputvar1asanint > 0 and inputvar1asanint < 100):
     print(inputvar1 + "does not has up to two charactors")
 
+
