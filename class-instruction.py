@@ -1,4 +1,5 @@
 
+from multiprocessing.connection import wait
 from tkinter import W
 
 
@@ -10,13 +11,24 @@ class Nummaths:
         return invar + self.mathvar
 
     def subnum(self, invar):
+       # self.__makenumber8__()
         return invar - self.mathvar
+
+    #def __makenumber8__():
+    #    return 987654321 / 123456789
+
+
+class moremath(Nummaths):
+
+    def divnum(self, invar ):
+        pass
 
 mathvar = Nummaths()
 anothervar = Nummaths()
 anothervar.mathvar = 10
 thisisanobject = Nummaths()
 thisisanobject.mathvar = 30
+
 
 print(mathvar.addnum(7))
 print(mathvar.subnum(7))
@@ -40,7 +52,7 @@ class Nummaths2:
         return invar - self.mathvar
 
     
-mathvar = Nummaths2()
+mathvar = Nummaths2(5)
 anothervar = Nummaths2(10)
 thisisanobject = Nummaths2(30)
 
@@ -76,5 +88,28 @@ print(object2)
 object2.showme()
 
 object2.copytome(object1)
-print(object2.mydata
+print(object2.mydata)
 
+
+
+
+
+
+ 
+
+
+class polymo:
+
+    def trim(self, input):
+        
+        # code that removes the last lettter of string
+        strlen = len(input)
+        newstr = input[0:strlen-1]
+        return newstr
+
+    def trim(self, input):
+        return "your trim will take 30 minutes"
+
+trimstr = polymo()
+print(trimstr.trim("spleleodot"))
+print(trimstr.trim(62))
