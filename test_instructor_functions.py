@@ -7,7 +7,7 @@ def ret_tru():
 def test_ret_tru():
     assert ret_tru() == True
 
-    # testing functions imported from antther file
+    # testing functions imported from another file
 
 def test_function_name():
     assert module_instruction.function_name() == "My function"
