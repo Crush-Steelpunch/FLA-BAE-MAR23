@@ -22,3 +22,12 @@ def test_return_my_score():
 def test_polymo():
     test_instance = module_instruction.polymo()
     assert test_instance.trim("spleleodot") == "spleleodo"
+
+
+    # writing the test, then making the code pass the test
+
+def test_palindrome():
+    assert module_instruction.palindrom_function("racecar") == True
+    assert module_instruction.palindrom_function("abcdef") == False
+    assert module_instruction.palindrom_function("tree") == False
+    assert module_instruction.palindrom_function("amanaplanacanalpanama") == True

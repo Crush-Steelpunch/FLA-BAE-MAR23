@@ -50,3 +50,15 @@ class polymo:
         strlen = len(input)
         newstr = input[0:strlen-1]
         return newstr
+
+
+def palindrom_function(instr):
+    strlenthg = len(instr)
+    outstr = ''
+    for letter in range(strlenthg-1,-1,-1):
+        outstr = outstr + instr[letter]
+    if outstr == instr:
+        return True
+    else:
+        return False
+    
