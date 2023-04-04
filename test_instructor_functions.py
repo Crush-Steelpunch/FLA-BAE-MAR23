@@ -1,0 +1,24 @@
+import module_instruction
+
+
+
+def test_function_name():
+    assert module_instruction.function_name() == "My function"
+    assert module_instruction.function_name() != "My function is awesome"
+
+def test_return_my_score():
+    assert module_instruction.return_my_score(90) == "band b1"
+    assert module_instruction.return_my_score(0) == "band b1"
+    assert module_instruction.return_my_score(-50) == "band b1"
+    assert module_instruction.return_my_score(120) == "band b2"
+    assert module_instruction.return_my_score(240) == "band b3"
+    assert module_instruction.return_my_score(350) == "band b4"
+    for b1test  in range(100):
+        assert module_instruction.return_my_score(b1test) == "band b1"
+    
+    for b2test  in range(100,200):
+        assert module_instruction.return_my_score(b2test) == "band b2"
+
+def test_polymo():
+    test_instance = module_instruction.polymo()
+    assert test_instance.trim("spleleodot") == "spleleodo"
