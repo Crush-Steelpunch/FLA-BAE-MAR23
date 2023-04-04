@@ -1,6 +1,13 @@
 import module_instruction
 
+# example of function and testin same file.
+def ret_tru():
+    return True
 
+def test_ret_tru():
+    assert ret_tru() == True
+
+    # testing functions imported from antther file
 
 def test_function_name():
     assert module_instruction.function_name() == "My function"
