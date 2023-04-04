@@ -1,6 +1,6 @@
 import module_instruction
 
-# example of function and testin same file.
+# example of function and testing in the same file.
 def ret_tru():
     return True
 
