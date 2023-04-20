@@ -1,0 +1,9 @@
+echo "This is my build script"
+echo "This is todays date"
+date
+echo "This is the username of jenkins"
+whoami
+echo "Show the weather"
+curl wttr.in/London?format=3
+echo "This is the contents of car.csv"
+cat Python/car.csv
