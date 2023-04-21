@@ -30,7 +30,7 @@ pipeline {
                     }
                 withEnv(['NOISE=cluck']) {
                // some block
-                    echo "Sheep goes $NOISE" > sheep
+                sh 'echo "Sheep goes $NOISE" > sheep'
                 }
 
             }
