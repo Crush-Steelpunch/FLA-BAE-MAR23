@@ -23,9 +23,9 @@ pipeline {
                 sh 'chmod 775 bash.sh'
                 //sh 'bash.sh'
                 sh './bash.sh'
-                                withEnv(['NOISE=oink']) {
+                withEnv(['NOISE=oink']) {
                // some block
-                    echo "Sheep goes $NOISE" > sheep
+                    sh 'echo "Sheep goes $NOISE" > sheep'
                     }
                     }
                 withEnv(['NOISE=cluck']) {
