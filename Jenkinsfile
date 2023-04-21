@@ -12,7 +12,7 @@ pipeline {
         stage('Run') {
             steps {
                 sh '''
-                if [ ! -d rundir ]:
+                if [ ! -d rundir ]
                 then 
                    mkdir rundir
                 fi
