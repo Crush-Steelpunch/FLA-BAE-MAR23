@@ -21,7 +21,8 @@ pipeline {
                 dir('rundir') {
                // some block
                 sh 'chmod 775 bash.sh'
-                sh 'bash.sh'
+                //sh 'bash.sh'
+                sh 'touch pies'
                                 withEnv(['NOISE=oink']) {
                // some block
                     echo "Sheep goes $NOISE" > sheep
