@@ -35,5 +35,10 @@ pipeline {
 
             }
         }
+        stage('Archive'){
+            step{
+                archiveArtifacts artifacts: 'sheep,rundir/sheep', followSymlinks: false
+            }
+        }
     }
 }
