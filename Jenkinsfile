@@ -11,7 +11,11 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh '''mkdir rundir
+                sh '''
+                if [ ! -d rundir ]:
+                then 
+                   mkdir rundir
+                fi
                 cp bash.sh rundir/
                 ''' 
                 dir('rundir') {
