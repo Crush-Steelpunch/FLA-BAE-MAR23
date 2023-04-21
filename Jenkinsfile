@@ -36,7 +36,7 @@ pipeline {
             }
         }
         stage('Archive'){
-            step{
+            steps {
                 archiveArtifacts artifacts: 'sheep,rundir/sheep', followSymlinks: false
             }
         }
