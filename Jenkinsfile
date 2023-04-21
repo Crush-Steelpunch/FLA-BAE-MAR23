@@ -8,6 +8,7 @@ pipeline {
                 echo 'Grap file from a Git repo'
                 // example of git directive
                 git branch: 'main', url: 'https://github.com/Crush-Steelpunch/22junenable2.git'
+                sh 'touch cows'
             }
         }
         stage('Run') {
