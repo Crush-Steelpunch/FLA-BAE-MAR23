@@ -16,6 +16,7 @@ pipeline {
                 ''' 
                 dir('rundir') {
                // some block
+                sh 'chmod 775 bash.sh'
                 sh 'bash.sh'
                                 withEnv(['NOISE=oink']) {
                // some block
