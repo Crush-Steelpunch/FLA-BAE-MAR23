@@ -2,6 +2,8 @@
 
 The only files you need in the image are `app.py`
 
+While the lab suggests python 3.6 or above it has been tested on 3.6
+
 To install the python requirements in python 3.6 you need to run the command
 
 ```bash
