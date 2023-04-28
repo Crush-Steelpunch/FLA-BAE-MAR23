@@ -5,4 +5,7 @@ metadata:
 spec:
   containers:
   - image: nginx
-     name: leonnginx
+    name: leonnginx
+    env:
+    - name: LEONVAR
+      value: pies
