@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - image: nginx
-    name: leonnginx
+     name: leonnginx
