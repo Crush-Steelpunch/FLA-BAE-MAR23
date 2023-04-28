@@ -9,3 +9,5 @@ spec:
     env:
     - name: LEONVAR
       value: pies
+    ports:
+    - containerPort: 80
