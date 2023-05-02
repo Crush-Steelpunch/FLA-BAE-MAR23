@@ -6,7 +6,7 @@ metadata:
     app: nginx
 spec:
   containers:
-  - image: baggypants12000/mycustomnginx:latest
+  - image: baggypants12000/piesweb:latest
     name: leoncustomnginx
     ports:
     - containerPort: 80
