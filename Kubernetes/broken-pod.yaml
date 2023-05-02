@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: leonnginx
+spec:
+  containers:
+  - image: baggypants120000/not-exists
+    name: leonnginx
+    env:
+    - name: LEONVAR
+      value: pies
+    ports:
+    - containerPort: 80
