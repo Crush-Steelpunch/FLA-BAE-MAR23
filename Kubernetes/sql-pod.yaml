@@ -1,0 +1,18 @@
+# Rob C Manifest from https://raw.githubusercontent.com/r-chizea/devops-tooling/main/sql-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sql
+  labels:
+    app: sql
+spec:
+  containers:
+  - name: sql
+    image: mysql
+    ports:
+    - containerPort: 3306
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: my-secret-pw
+    - name: MYSQL_DATABASE
+      value: mydatabase
