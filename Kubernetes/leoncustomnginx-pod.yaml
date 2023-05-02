@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: leoncustom
+  labels: 
+    app: nginx
+spec:
+  containers:
+  - image: baggypants12000/mycustomnginx:latest
+    name: leoncustomnginx
+    ports:
+    - containerPort: 80
