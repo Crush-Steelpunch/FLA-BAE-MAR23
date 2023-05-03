@@ -4,19 +4,19 @@ metadata:
   name: piesweb
   labels:
     app: piesweb
-    env: test
+    env: prod
 spec:
   # modify replicas according to your case
   replicas: 2
   selector:
     matchLabels:
       app: piesweb
-      env: test
+      env: prod
   template:
     metadata:
       labels:
         app: piesweb
-        env: test
+        env: prod
     spec:
       containers:
       - name: piesweb
