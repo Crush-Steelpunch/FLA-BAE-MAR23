@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: piesweb
+  name: pieswebprod
   labels:
     app: piesweb
     env: prod
