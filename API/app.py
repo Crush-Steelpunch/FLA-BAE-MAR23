@@ -6,7 +6,7 @@ app = Flask(__name__)
 def main_homepage_function():
     htmloutvar = ''
     for i in range(7):
-        htmloutvar = htmloutvar + "This is line " + str(i) + "\n"
+        htmloutvar = htmloutvar + "This is line " + str(i) + "<br>"
     return htmloutvar
 
     return 
