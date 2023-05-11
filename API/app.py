@@ -13,7 +13,7 @@ def main_homepage_function():
 
 @app.route('/recipies/<recipieid>')
 def recipieshow(recipieid):
-    if len(recipiedb) < int(recipieid):
+    if len(recipiedb) <= int(recipieid):
         return "No Recipie"
     else:
         return recipiedb[int(recipieid)]
