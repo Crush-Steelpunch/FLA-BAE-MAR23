@@ -30,6 +30,7 @@ def recipieshow(recipieid):
 def recipiedel(recipieid):
     if request.method == 'DELETE':
         recipiedb.pop(int(recipieid))
+        return 
     else:
         return "You need to use a DELETE http method<br>"
 
