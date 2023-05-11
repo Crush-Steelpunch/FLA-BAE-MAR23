@@ -26,9 +26,9 @@ def recipieshow(recipieid):
     else:
         return recipiedb[int(recipieid)]
 
-@app.route('/delrecipie/<recipieid>', method=['GET','DELETE'])
+@app.route('/delrecipie/<recipieid>', method=['GET','POST'])
 def recipiedel(recipieid):
-    if request.method == 'DELETE':
+    if request.method == 'POST':
         recipiedb.pop(int(recipieid))
     else:
         return "Here is all the recipies: <br>"  + recipiedb + "<br> You need to use a DELETE http method"
