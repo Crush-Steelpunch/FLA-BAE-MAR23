@@ -2,7 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-recipiedb = ["Recipe Name: Spicy Chicken and Rice Bowl<br>Nutrition (per serving): Calories: 590, Carbs: 75g, Protein: 30g, Fat: 18g<br>Ingredients:<br>- 2 boneless, skinless chicken breasts<br>","Recipe Name: Quick Chickpea Salad<br>Nutrition: Calories:  300, Total Fat:  10g, Carbohydrates: 30g, Protein: 10g "]
+recipiedb = [
+    "Recipe Name: Spicy Chicken and Rice Bowl<br>Nutrition (per serving): Calories: 590, Carbs: 75g, Protein: 30g, Fat: 18g<br>Ingredients:<br>- 2 boneless, skinless chicken breasts<br>",
+    "Recipe Name: Quick Chickpea Salad<br>Nutrition: Calories:  300, Total Fat:  10g, Carbohydrates: 30g, Protein: 10g "    
+    ]
 
 @app.route('/')
 def main_homepage_function():
