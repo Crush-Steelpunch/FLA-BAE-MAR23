@@ -14,9 +14,9 @@ def main_homepage_function():
         htmloutvar = htmloutvar + "This is line " + str(i) + "<br>"
     return htmloutvar
 
-@app.route('/name')
-def prtname():
-    return "Hello Name"
+@app.route('/name/<inputname>')
+def prtname(inputname):
+    return "Hello " + inputname 
 
 
 @app.route('/recipies/<recipieid>')
