@@ -30,17 +30,17 @@ def recipieshow(recipieid):
 def recipiedel(recipieid):
     if request.method == 'DELETE':
         recipiedb.pop(int(recipieid))
-        return "200"
+        return ""
     else:
-        return "You need to use a DELETE HTTP method<br>"
+        return "You need to use a DELETE HTTP method<br>", 400
 
 @app.route('/addrecipie', methods=['GET', 'POST'])
 def recipieadd():
     if request.method == 'POST':
         recipiedb.append(request.get_data())
-        return "200"
+        return ""
     else:
-        return "You need to use a POST HTTP method"
+        return "You need to use a POST HTTP method", 400
 
 
 @app.route('/toothbrushes')
