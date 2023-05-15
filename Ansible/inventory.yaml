@@ -4,12 +4,15 @@ all:
     172.31.32.236:
   children:
     groupnamea:
+      vars:
+        variables_set_for_the_whole_group: var_value
       hosts:
         host1:
         host2:
     groupnameb:
       hosts:
         host3:
+          variable_for_an_individual_host: var_value
         host4:
     loadbalancers:
       hosts:
