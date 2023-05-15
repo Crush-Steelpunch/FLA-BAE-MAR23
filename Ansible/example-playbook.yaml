@@ -14,7 +14,7 @@
    
 
 - name: Install the nginx loadbalancer config
-  hosts: loadbalancer
+  hosts: loadbalancers
   become: true
   tasks:
   - name: copy ythe config file over
