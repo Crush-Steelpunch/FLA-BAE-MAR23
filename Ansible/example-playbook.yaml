@@ -1,0 +1,36 @@
+# playbook (2 space indent)
+# keywords: hosts, tasks, name
+- hosts: userconfig
+  name: Install nginx on all hosts
+  become: true
+  tasks:
+  - name: "Ping"
+    ping:
+  - name: "Install the nginx package"
+    apt:
+      state: latest
+      name: nginx
+      update_cache: true
+---
+
+- name: Install the nginx loadbalancer config
+  hosts: loadbalancer
+  become: true
+  tasks:
+  - name: copy ythe config file over
+    copy:
+      dest: /etc/nginx/nginx.conf 
+      src: nginx-lb.conf
+  - name:
+    systemd:
+      name: nginx
+      state: restarted
+---
+- name: install the webpages
+  become: true
+  host: appservers
+  tasks:
+  - name: copy the web page
+    copy:
+      src: example-webpage.html
+      dest: /var/www/html/index.nginx-debian.html

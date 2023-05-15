@@ -44,6 +44,12 @@ ansible -i inventory.yaml appserver -m copy -a 'src=example-webpage.html  dest=/
 ansible -i inventory.yaml userconfig -m user -a 'name=leon state=present' --become
 ```
 
+## apt
+
+```bash
+ansible -i inventory.yaml all -m apt -a 'state=latest name=nginx update_cache=true' --become
+```
+
 ## systemd
 
 ```bash
