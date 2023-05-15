@@ -2,18 +2,19 @@ all:
   hosts:
     172.31.34.249:
     172.31.32.236:
-  groupnamea:
-    hosts:
-      host1:
-      host2:
-  groupnameb:
-    hosts:
-      host3:
-      host4:
-  loadbalancers:
-    hosts:
-      172.31.36.91:
-  appserver:
-    hosts:
-      172.31.34.249:
-      172.31.32.236:
+  children:
+    groupnamea:
+      hosts:
+        host1:
+        host2:
+    groupnameb:
+      hosts:
+        host3:
+        host4:
+    loadbalancers:
+      hosts:
+        172.31.36.91:
+    appserver:
+      hosts:
+        172.31.34.249:
+        172.31.32.236:
