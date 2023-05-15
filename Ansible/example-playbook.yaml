@@ -11,7 +11,7 @@
       state: latest
       name: nginx
       update_cache: true
----
+   
 
 - name: Install the nginx loadbalancer config
   hosts: loadbalancer
@@ -25,7 +25,7 @@
     systemd:
       name: nginx
       state: restarted
----
+    
 - name: install the webpages
   become: true
   host: appservers
