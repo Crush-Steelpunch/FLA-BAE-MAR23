@@ -46,6 +46,6 @@ ansible -i inventory.yaml userconfig -m user -a 'name=leon state=present' --beco
 
 ## systemd
 
-`1`bash
+```bash
 ansible -i inventory.yaml loadbalancers -m systemd -a 'name=nginx state=restarted' --become
 ```
