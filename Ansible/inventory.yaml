@@ -14,7 +14,12 @@ all:
     loadbalancers:
       hosts:
         172.31.36.91:
-    appserver:
+    appservers:
       hosts:
         172.31.34.249:
         172.31.32.236:
+    userconfig:
+      hosts:
+        172.31.34.249:
+        172.31.32.236:
+        172.31.36.91:
