@@ -28,7 +28,7 @@
     
 - name: install the webpages
   become: true
-  host: appservers
+  hosts: appservers
   tasks:
   - name: copy the web page
     copy:
