@@ -36,9 +36,6 @@ scp -i ~/Downloads/fla-may15.pem ~/Downloads/fla-may15.pem ubuntu@3.8.182.85:~/
 ```bash
 ansible -i inventory.yaml loadbalancers -m copy -a 'src=nginx-lb.conf  dest=/etc/nginx/nginx.conf' --become
 ansible -i inventory.yaml appserver -m copy -a 'src=example-webpage.html  dest=/var/www/html/index.nginx-debian.html' --become
-ansible -i inventory.yaml loadbalancers -m command -a 'systemctl restart nginx' --become
-#or
-ansible -i inventory.yaml loadbalancers -m systemd -a 'name=nginx state=restarted' --become
 ```
 
 ## user
@@ -49,6 +46,6 @@ ansible -i inventory.yaml userconfig -m user -a 'name=leon state=present' --beco
 
 ## systemd
 
-``bash
+`1`bash
 ansible -i inventory.yaml loadbalancers -m systemd -a 'name=nginx state=restarted' --become
 ```
