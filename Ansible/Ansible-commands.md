@@ -30,7 +30,7 @@ scp -i <keyfile>  <source> <user>@<targethost>:<path>
 #example usage
 scp -i ~/Downloads/fla-may15.pem ~/Downloads/fla-may15.pem ubuntu@3.8.182.85:~/
 ```
-pies
+
 ## copy
 
 ```bash
@@ -38,5 +38,17 @@ ansible -i inventory.yaml loadbalancers -m copy -a 'src=nginx-lb.conf  dest=/etc
 ansible -i inventory.yaml appserver -m copy -a 'src=example-webpage.html  dest=/var/www/html/index.nginx-debian.html' --become
 ansible -i inventory.yaml loadbalancers -m command -a 'systemctl restart nginx' --become
 #or
+ansible -i inventory.yaml loadbalancers -m systemd -a 'name=nginx state=restarted' --become
+```
+
+## user
+
+```bash
+ansible -i inventory.yaml userconfig -m user -a 'name=leon state=present' --become
+```
+
+## systemd
+
+``bash
 ansible -i inventory.yaml loadbalancers -m systemd -a 'name=nginx state=restarted' --become
 ```
