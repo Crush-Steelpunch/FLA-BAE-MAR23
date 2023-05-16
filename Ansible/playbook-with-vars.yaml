@@ -19,10 +19,11 @@
   - name: install good old nginx
     apt:
       name: nginx
+      update_cache: true
       state: latest
   - name: Put the hostname in a webfile
     copy:
-      content: "This server is: {{  ansible_fqdn }}"
+      content: "This server is: {{ ansible_fqdn }}"
       dest: /var/www/html/index.nginx-debian.html
   
   

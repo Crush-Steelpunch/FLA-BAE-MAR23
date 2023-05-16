@@ -1,0 +1,25 @@
+---
+# tasks file for leonlbapp
+
+- name: "Install the nginx package"
+  apt: # this is the module performing the tasks
+    state: latest  # This is one of the arguments to the task
+    name: nginx
+    update_cache: true
+
+# 
+
+- name: copy the config file over
+  template:
+    dest: /etc/nginx/nginx.conf
+    src: nginx-lb.conf.j2
+  register: templatetaskoutput
+  notify: 
+  - restart-nginx
+  when: inventory_hostname == 'loadbalancers'
+
+- name: copy the web page
+  copy:
+    src: example-webpage.html
+    dest: /var/www/html/index.nginx-debian.html
+  when: inventory_hostname == 'appservers'

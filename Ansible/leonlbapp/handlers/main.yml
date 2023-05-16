@@ -1,0 +1,7 @@
+---
+# handlers file for leonlbapp
+- name: restart-nginx
+  systemd:
+    name: nginx
+    state: restarted
+  when: inventory_hostname == 'loadbalancers'
