@@ -1,0 +1,15 @@
+- name: This playbook will deploy a thing
+  hosts: userconfig
+  become: true
+  vars:
+    datavar: leon
+  tasks:
+  - name: make some diretcory
+    file:
+      path: /etc/{{ datavar }}.d
+      state: directory
+  - name: copy some file somewhere
+    copy: 
+      content: "{{ datavar}} Some Random String In"
+      dest: /etc/{{ datavar }}.d/{{ datavar }}.conf
+  
