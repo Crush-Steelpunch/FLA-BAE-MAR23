@@ -13,7 +13,10 @@
       content: "{{ datavar}} Some Random String In"
       dest: /etc/{{ datavar }}.d/{{ datavar }}.conf
   - name: touch a file in the working directory
+    vars: 
+      taskvar: "wobble"
+      datavar: "somethingelse"
     file:
-      path: "{{ datavar }}"
+      path: "/etc/{{ datavar }}"
       state: touch
   
