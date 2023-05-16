@@ -2,7 +2,7 @@ events {}
 http{
     upstream backend {
         server {{ serverip1 }} weight=5;
-        server {{ servierip2 }};
+        server {{ serverip2 }};
     }
     server {
         listen 80;
