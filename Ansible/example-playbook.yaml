@@ -23,8 +23,8 @@
   tasks:
   - name: copy the config file over
     template:
-      dest: /etc/nginx/nginx.conf.j2
-      src: nginx-lb.conf
+      dest: /etc/nginx/nginx.conf
+      src: nginx-lb.conf.j2
     notify: 
     - restart-nginx
   handlers:
