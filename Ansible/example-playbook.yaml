@@ -25,6 +25,7 @@
     template:
       dest: /etc/nginx/nginx.conf
       src: nginx-lb.conf.j2
+    register: templatetaskoutput
     notify: 
     - restart-nginx
   - name: debug messages
@@ -33,6 +34,9 @@
   - name: Nice message
     debug:
       msg: "Hello, nice to see you, have a great deployment"
+  - name: print the template task info
+    debug:
+      var: templatetaskoutput
   handlers:
   - name: restart-nginx
     systemd:
