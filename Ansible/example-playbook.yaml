@@ -11,17 +11,21 @@
       state: latest  # This is one of the arguments to the task
       name: nginx
       update_cache: true
-   
+# Play 2 LB
+
 
 - name: Install the nginx loadbalancer config
   hosts: loadbalancers
   become: true
   tasks:
-  - name: copy ythe config file over
+  - name: copy the config file over
     copy:
       dest: /etc/nginx/nginx.conf 
       src: nginx-lb.conf
-  - name:
+    notify: 
+    - restart-nginx
+  handlers:
+  - name: restart-nginx
     systemd:
       name: nginx
       state: restarted
