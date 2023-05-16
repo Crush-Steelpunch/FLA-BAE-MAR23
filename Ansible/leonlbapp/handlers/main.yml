@@ -4,4 +4,4 @@
   systemd:
     name: nginx
     state: restarted
-  when: inventory_hostname == 'loadbalancers'
+  when: rolevar == "loadbalancer"
