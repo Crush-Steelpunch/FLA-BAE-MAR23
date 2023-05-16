@@ -27,6 +27,12 @@
       src: nginx-lb.conf.j2
     notify: 
     - restart-nginx
+  - name: debug messages
+    debug: 
+      var: serverip1
+  - name: Nice message
+    debug:
+      msg: "Hello, nice to see you, have a great deployment"
   handlers:
   - name: restart-nginx
     systemd:
