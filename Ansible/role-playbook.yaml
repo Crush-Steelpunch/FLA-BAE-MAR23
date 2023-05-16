@@ -1,7 +1,7 @@
 - name: this playbook uses a role
   become: true
   tasks:
-  hosts: all
+  hosts: userconfig
   roles:
     - leonlbapp
   tasks:

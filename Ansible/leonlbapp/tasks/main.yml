@@ -16,10 +16,10 @@
   register: templatetaskoutput
   notify: 
   - restart-nginx
-  when: inventory_hostname == 'loadbalancers'
+  when: rolevar == "loadbalancer"
 
 - name: copy the web page
   copy:
     src: example-webpage.html
     dest: /var/www/html/index.nginx-debian.html
-  when: inventory_hostname == 'appservers'
+  when: rolevar == "appserver"
