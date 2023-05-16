@@ -1,14 +1,14 @@
 # playbook (2 space indent)
-# keywords: hosts, tasks, name
+# keywords: hosts, tasks, name, become
 - hosts: userconfig
   name: Install nginx on all hosts
   become: true
-  tasks:
-  - name: "Ping"
+  tasks: # this is the list of tasks to perform
+  - name: "Ping" 
     ping:
   - name: "Install the nginx package"
-    apt:
-      state: latest
+    apt: # this is the module performing the tasks
+      state: latest  # This is one of the arguments to the task
       name: nginx
       update_cache: true
    

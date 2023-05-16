@@ -14,6 +14,10 @@ ansible 127.0.0.1 -m user -a 'name=leon --become # add become if it needs sudo p
 - copy
 - systemd
 - user
+- shell
+- apt_key
+- apt_repository
+- apt
 
 ## ansible-doc
 
