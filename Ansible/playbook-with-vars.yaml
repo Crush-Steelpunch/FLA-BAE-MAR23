@@ -1,8 +1,6 @@
 - name: This playbook will deploy a thing
   hosts: userconfig
   become: true
-  vars:
-    datavar: leon
   tasks:
   - name: make some diretcory
     file:
@@ -15,7 +13,6 @@
   - name: touch a file in the working directory
     vars: 
       taskvar: "wobble"
-      datavar: "somethingelse"
     file:
       path: "/etc/{{ datavar }}"
       state: touch
