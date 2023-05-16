@@ -17,10 +17,13 @@
 - name: Install the nginx loadbalancer config
   hosts: loadbalancers
   become: true
+  vars:
+    serverip1: "172.31.44.90"  # these vars are used in the nginx.conf.j2 file
+    serverip2: "172.31.34.207"
   tasks:
   - name: copy the config file over
-    copy:
-      dest: /etc/nginx/nginx.conf 
+    template:
+      dest: /etc/nginx/nginx.conf.j2
       src: nginx-lb.conf
     notify: 
     - restart-nginx
