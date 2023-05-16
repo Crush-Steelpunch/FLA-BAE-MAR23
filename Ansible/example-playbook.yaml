@@ -36,7 +36,7 @@
       msg: "Hello, nice to see you, have a great deployment"
   - name: print the template task info
     debug:
-      var: templatetaskoutput
+      var: templatetaskoutput.size
   handlers:
   - name: restart-nginx
     systemd:
