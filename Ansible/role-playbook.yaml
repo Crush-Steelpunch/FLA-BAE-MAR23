@@ -1,0 +1,10 @@
+- name: this playbook uses a role
+  become: true
+  tasks:
+  hosts: all
+  roles:
+    - leonlbapp
+  tasks:
+    - name: task one do some prep
+      debug:
+        msg: "I have executed the role"
