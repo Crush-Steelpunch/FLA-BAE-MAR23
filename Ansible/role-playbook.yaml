@@ -1,6 +1,9 @@
 - name: this playbook uses a role
   become: true
   tasks:
+  vars:
+    serverip1: 172.31.34.207
+    servreip2: 172.31.44.90
   hosts: userconfig
   roles:
     - leonlbapp
