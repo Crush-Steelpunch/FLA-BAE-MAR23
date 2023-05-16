@@ -21,7 +21,9 @@ all:
     userconfig:
       hosts:
         172.31.36.199:
+          datavar: "cheesecake"
         172.31.44.90:
+          datavar: "eclairs"
         172.31.34.207:
           datavar: "puddings"
     dockerhost:
