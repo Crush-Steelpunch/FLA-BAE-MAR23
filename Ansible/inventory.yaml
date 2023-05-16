@@ -16,8 +16,11 @@ all:
         host4:
     loadbalancers:
       hosts:
+        172.31.36.199:
     appservers:
       hosts:
+        172.31.44.90:
+        172.31.34.207:
     userconfig:
       hosts:
         172.31.36.199:
