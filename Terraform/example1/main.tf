@@ -13,5 +13,6 @@ provider "aws" {
 
 resource "aws_instance" "this" {
   ami                     = "ami-09744628bed84e434"
+  key_name                = "fla-may15"
   instance_type           = "t2.micro"
 }
