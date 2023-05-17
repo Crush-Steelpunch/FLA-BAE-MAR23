@@ -60,4 +60,5 @@ output "InstanceState" {
 
 variable awsimageid {
   type = string
+  default = "ami-028a5cd4ffd2ee495"
 }
