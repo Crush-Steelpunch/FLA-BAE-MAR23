@@ -12,7 +12,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "this" {
-  ami                    = "ami-09744628bed84e434"
+  #ami                    = "ami-09744628bed84e434"
+  ami                    = var.awsimageid
   key_name               = "fla-may15"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id, "sg-0b1e75c9741f11704"]
@@ -55,4 +56,8 @@ output "PublicIP" {
 }
 output "InstanceState" {
   value = aws_instance.this.instance_state
+}
+
+variable awsimageid {
+  type = string
 }
