@@ -49,3 +49,10 @@ resource "aws_security_group" "allow_ssh" {
     Environment = "Prod"
   }
 }
+
+output "PublicIP" {
+  value = aws_instance.this.public_ip
+}
+output "InstanceState" {
+  value = aws_instance.this.instance_state
+}
