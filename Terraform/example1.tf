@@ -1,0 +1,6 @@
+BLOCKKEYWORD LABLE1 LABLE2 {
+
+
+}
+
+
