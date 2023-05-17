@@ -15,7 +15,7 @@ resource "aws_instance" "this" {
   ami                    = "ami-09744628bed84e434"
   key_name               = "fla-may15"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.allow_ssh, "sg-0b1e75c9741f11704"]
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id, "sg-0b1e75c9741f11704"]
 }
 
 resource "aws_security_group" "allow_ssh" {
