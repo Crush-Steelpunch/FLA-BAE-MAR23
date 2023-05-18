@@ -61,10 +61,15 @@ output "InstanceState" {
 
 module "Submodue1" {
   source = "./example-module"
+  mys3bucketname = var.inputs3name
   
 }
 
 variable awsimageid {
   type = string
 #  default = "ami-028a5cd4ffd2ee495"
+}
+
+variable inputs3name {
+  type = string
 }
