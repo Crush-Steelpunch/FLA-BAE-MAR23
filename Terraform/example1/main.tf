@@ -51,11 +51,17 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
+
 output "PublicIP" {
   value = aws_instance.this.public_ip
 }
 output "InstanceState" {
   value = aws_instance.this.instance_state
+}
+
+module "Submodue1" {
+  source = "./example1"
+  
 }
 
 variable awsimageid {
