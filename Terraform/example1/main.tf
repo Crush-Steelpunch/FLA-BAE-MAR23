@@ -60,7 +60,7 @@ output "InstanceState" {
 }
 
 module "Submodue1" {
-  source = "./example1"
+  source = "./example-module"
   
 }
 
