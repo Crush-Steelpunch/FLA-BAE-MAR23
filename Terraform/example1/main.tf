@@ -59,6 +59,9 @@ output "InstanceState" {
   value = aws_instance.this.instance_state
 }
 
+output "S3arn" {
+  value = module.Submodule1.BucketArn
+}
 module "Submodue1" {
   source = "./example-module"
   mys3bucketname = var.inputs3name
