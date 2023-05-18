@@ -60,7 +60,7 @@ output "InstanceState" {
 }
 
 output "S3arn" {
-  value = module.Submodule1.BucketArn
+  value = module.Submodue1.BucketArn
 }
 module "Submodue1" {
   source = "./example-module"
