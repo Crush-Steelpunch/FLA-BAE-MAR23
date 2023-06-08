@@ -1,7 +1,7 @@
 # Exercise
 
 In LoD, Create a new folder called Documents/gitlearn1, open it in VScode, Initialise the folder as git repo.
-- Go to the Source contol Button and clicj the little button at the top
+- Go to the Source contol Button and click the little button at the top
 
 Open a terminal pane in VSCode **(View > Terminal)** and set up your user details with
 
